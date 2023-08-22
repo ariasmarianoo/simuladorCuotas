@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Crédito - ProMujer Google</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>ProMujer <span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span></h1>
+
+    <div class="container">
+        <div class="inputs">
+            <div class="input-container">
+                <label for="monto">Monto:</label>
+                <input type="number" id="monto" placeholder="Monto a solicitar">
+            </div>
+
+            <div class="input-container">
+                <label for="cuotas">Cuotas:</label>
+                <input type="number" id="cuotas" placeholder="Cantidad de cuotas">
+            </div>
+
+            <div class="input-container">
+                <label for="tna">TNA:</label>
+                <input type="number" step="0.01" id="tna" placeholder="TNA" value="85">
+            </div>
+
+            <div class="input-container">
+                <label for="iva">IVA:</label>
+                <input type="number" step="0.01" id="iva" placeholder="IVA" value="21">
+            </div>
+
+            <div class="input-container">
+                <label for="ingresoBruto">Ingreso Bruto:</label>
+                <input type="number" step="0.01" id="ingresoBruto" placeholder="Ingreso Bruto" value="2.8">
+            </div>
+
+            <div class="input-container">
+                <label for="comision">Comisión:</label>
+                <input type="number" step="0.01" id="comision" placeholder="Comisión" value="5">
+            </div>
+
+            <button onclick="calcularCuota()">Calcular</button>
+        </div>
+
+        <div id="resultados"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

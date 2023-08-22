@@ -1,0 +1,159 @@
+body {
+    background-color: #ad3c3c;
+    font-family: Arial, sans-serif;
+    color: white;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px #000000;
+    margin: 30px 20px;
+    background-color: #962929;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+h1 span:nth-child(1) { color: #4285F4; }
+h1 span:nth-child(2) { color: #EA4335; }
+h1 span:nth-child(3) { color: #FBBC05; }
+h1 span:nth-child(4) { color: #34A853; }
+h1 span:nth-child(5) { color: #4285F4; }
+h1 span:nth-child(6) { color: #EA4335; }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.inputs {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 70%;
+}
+
+label {
+    font-size: 1.2em;
+    text-shadow: 1px 1px 2px #000000;
+    margin-right: 10px;
+    width: 30%;
+}
+
+input {
+    width: 70%;
+    padding: 5px;
+    border: 1px solid #F9F3F2;
+    border-radius: 10px;
+    background-color: #5B4641;
+    color: white;
+    box-shadow: 0 0 2px #666;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 3px #555;
+}
+
+button {
+    cursor: pointer;
+    margin-top: 10px;
+    width: 40%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #4a90e2;
+    color: #ffffff;
+    font-size: 1.5em;
+    border: none;
+    text-shadow: 1px 1px 4px #333;
+    box-shadow: 2px 2px 5px #666;
+    transition: transform 0.1s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+#resultados {
+    font-size: 1.5em;
+    width: 40%;
+    margin-left: 30px;
+    background-color: #4a90e2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px #333;
+    color: #ffffff;
+    text-shadow: 1px 1px 4px #333;
+    margin-top: 20px;
+}
+
+/* Media queries para diseño responsive */
+
+/* Pantallas de tablet */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inputs, #resultados {
+        width: 90%;
+    }
+
+    .input-container {
+        width: 90%;
+    }
+
+    label {
+        font-size: 1.2em;
+        text-shadow: 1px 1px 2px #000000;
+        margin-right: 10px;
+        width: 30%;
+    }
+
+    input, button {
+        width: 90%;
+    }
+
+    #resultados {
+        font-size: 1.2em;
+    }
+}
+
+/* Pantallas de móviles */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    label {
+        font-size: 1em;
+    }
+
+    input, button {
+        width: 90%;
+    }
+
+    #resultados {
+        font-size: 1.2em;
+    }
+}
